@@ -11,7 +11,7 @@ void debugoverlay() {
 		const char* health = health_unchar.c_str();
 		if (player->health() <= player->GetMaxHealth() && player->team() != localPlayer->team() && player->isAlive())
 		{
-			interfaces::debugOverlay->AddEntityTextOverlay(i, 0, 0, 255, 255, 0, 255, "Cygun Bot");
+			interfaces::debugOverlay->AddEntityTextOverlay(i, 0, 0, 255, 255, 0, 255, "Player");
 			interfaces::debugOverlay->AddEntityTextOverlay(i, 2, 0, 255, 255, 0, 255, health);
 		}
 	}
